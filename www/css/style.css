@@ -1,0 +1,116 @@
+/* Empty. Add your own CSS if you like */
+
+.body{
+    cursor: url('http://ionicframework.com/img/finger.png');    
+}
+
+.title.title-center.header-item {
+    font-family:cursive ;
+	font-size: 10px;
+	font-style:italic;
+	font-variant:inherit;
+	font-weight: 1000;
+	line-height: 50px;
+    color: black;
+}
+
+/*Avatar Photo*/
+
+ .avatarPhoto {
+      height:10px;
+      overflow: hidden;
+      border-radius:50%;
+      position: relative;
+     
+     width: 10%;
+    max-width: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    }
+
+    .avatarPhoto img {
+      position: absolute;
+      top:10%;
+      left:10%;
+      transform: translate(-50%,-50%)
+    }
+
+
+/*Shadow TEXT*/
+.ShadowText{
+    font-weight: bold;
+	color: #00304a;
+	position: absolute;
+    text-align: center;
+	text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+    left: 0;
+	right: 0;
+	font-family: Courier;
+	font-size: 2em;
+}
+
+.star.item-content{ 
+    background-color: antiquewhite;
+}  
+
+.splash{
+    background: url(../img/01.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+        background-size: cover;   
+}
+
+.branding{
+    width: 50%;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tagline{
+    font-size: 2rem;
+    color: red;
+}
+
+.branding p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.item-divider{
+    background-color: antiquewhite;
+}
+
+.bar-positive, .tabs-positive>.tabs{
+    background-color:aqua !important;
+    border-color:aqua;
+    color: blue;
+}
+
+.item.thumnail.-left img{
+    border-radius: 10px;
+}
+
+item h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: green;
+}
+
+.dayhighlight{
+    background-color: antiquewhite; 
+    border-top: 20px solid gray;
+}
+
+.dayhighlight h2{
+    color:aqua;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+
+
+

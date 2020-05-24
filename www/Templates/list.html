@@ -1,0 +1,49 @@
+             <ion-view view-title="Sudina Stuff" >
+        
+        <div class="bar bar-subheader item-input-inset bar-light">
+            <label class="item-input-wrapper">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" ng-model="query" placeholder="search">
+            </label>                                                        
+        </div>
+        
+        <ion-content  class="has-subheader">
+            
+            <ion-refresher on-refresh="doRefresh()">
+            </ion-refresher>
+            
+            <ion-list >
+            
+                <ion-item ng-class="{'star':item.star}" ng-repeat='item in Stuff | filter:query'
+                      class="item-thumbnail-left item-icon-right  item-text-wrap"
+                          href="#/tab/list/{{item.shortname}}">
+        
+<!--                <img ng-src="img/{{item.shortname}}_tn.jpg" alt="{{item.shortname}} Photo">-->
+                    
+                <img ng-src="Data/Staff/{{item.shortname}}.jpg" alt="{{item.shortname}} Photo">
+
+                 
+                <h2> <b>Name</b>:{{item.name}}</h2>
+                <h2> <b>Desigantion</b>:{{item.Desigantion}}</h2>
+                 
+                <h2> <b>About</b><p>:{{item.about | limitTo:100}}
+                    {{item.bio.length>150 ? '&hellip;':' ' }}
+                    </p></h2>
+                    
+                
+                <ion-option-button class="button-dark" 
+                                   ng-click="callMe(item)">
+                <i class="ion-ios-telephone-outline"></i>
+                    
+                    </ion-option-button>     
+                    
+                <ion-option-button class="button-dark" 
+                                   ng-click="mailMe(item)">
+                    <i class="ion-email"></i>
+                    </ion-option-button> 
+                                   
+                </ion-item>
+            </ion-list>
+        </ion-content>
+        </ion-view>
+ 

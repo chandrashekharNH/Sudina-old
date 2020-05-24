@@ -1,0 +1,60 @@
+<ion-header-bar class="bar-positive">
+<h2 class="title">MoreInfo</h2>
+</ion-header-bar>
+
+<ion-view>
+   <ion-content>
+       
+       <ion-item class="item-text-wrap"
+                  ng-repeat="item in Stuff |filter:{shortname:whichMember}"> 
+       
+       <div class="list card">
+
+  <div class="item item-avatar">      
+<!--    <img ng-src="img/{{item.shortname}}_tn.jpg" alt="{{item.shortname}} Photo">-->
+    <img ng-src="Data/Staff/{{item.shortname}}.jpg" alt="{{item.shortname}} Photo">
+
+      
+    <h2>{{item.name}}</h2>({{item.shortname}})
+    <p>{{item.Desigantion}}</p>
+  </div>
+
+  <div class="item item-body">
+<!--    <img ng-src="img/{{item.shortname}}_tn.jpg" alt="{{item.shortname}} Photo">-->
+      
+          <img ng-src="Data/Staff/{{item.shortname}}.jpg" alt="{{item.shortname}} Photo">
+    <p>
+      {{item.about}}.
+    </p>
+    <p>
+        <button class="button icon-left ion-ios-telephone-outline" ng-click="callMe(item)">Call</button>
+        <button class="button icon-left ion-email" ng-click="mailMe(item)">Email></button>
+    </p>
+      
+  </div>
+
+</div>
+       </ion-item>
+       
+<!--
+    <ion-list class="list-inset">
+        <ion-item class="item-text-wrap"
+                  
+            ng-repeat="item in Stuff |filter:{shortname:whichMember}">                
+            <img ng-src="img/{{item.shortname}}_tn.jpg" alt="{{item.shortname}} Photo">
+            <h2> <b>Name</b>:{{item.name}}</h2>
+            <h2> <b>Short Name </b>:{{item.shortname}}</h2>
+            <h2> <b>Desigantion</b>:{{item.Desigantion}}</h2>
+            
+            <h2> <b>PhoneNumber </b>:{{item.PhoneNumber}}</h2>
+            
+            <h2> <b>Email </b>:{{item.eMail}}</h2>
+            
+            <h2> <b>About </b>:{{item.about}}</h2>
+            
+        </ion-item>
+        
+    </ion-list>
+-->
+    </ion-content>
+</ion-view>
